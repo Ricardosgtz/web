@@ -1,0 +1,206 @@
+body, html {
+    font-family: "poppins", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+/*TITULO INGENIRIA EN SISTEMAS COMPUTACIONALES*/
+
+.container h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    color:rgb(0, 177, 0);
+    position: absolute;
+    top: 7%;
+    right: 4%;
+    font-style: normal;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-align: center;
+    height: 0vh;
+    margin: 0;
+    padding: 1cm;
+}
+
+/*LOGO DEL ITSSAT*/
+
+.career img {
+    position: relative;
+    left: 5%;
+    top: 4%;
+    height: 80vh;
+}
+
+/*PRESENTACION DE LA CARRERA*/
+
+.presentation {
+    position: relative;
+    width: 50%;
+    height: auto;
+    top: -70%;
+    left: 43%;
+    text-align: justify;
+}
+
+.presentation h2 {
+    color: rgb(14, 245, 14);
+}
+
+.presentation p {
+    font-size: 22px;
+}
+
+/*BARRA DE NAVEGACION*/
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 20px;
+    display: flex;
+    gap: 16px;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px 16px;
+    z-index: 10000;
+}
+.nav-bar ul li {
+    position: fixed;
+    left: 34vh;
+}
+
+
+.nav-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 16px;
+}
+
+.nav-bar li {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar a {
+    display: block;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.nav-bar a:hover {
+    background-color: rgb(14, 245, 14);
+}
+
+.nav-bar ul {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-bar ul li {
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    margin: 0 0;
+    
+}
+
+.nav-bar ul li::after {
+    content: attr(data-hover);
+    position: absolute;
+    bottom: -130px; /* Ajusta según sea necesario */
+    left: 30%;
+    transform: translate(-50%);
+    width: max-content;
+    max-width: 200%;
+    padding: 10%;
+    background: rgb(148, 250, 148);
+    color: black;
+    text-align: center;
+    font-size: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+    z-index: 1;
+}
+
+.nav-bar ul li:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*DOCENTES*/
+
+.teacher {
+    position: relative;
+    top: -60%;
+    left: 30px;
+    width: 80%;
+    margin: 0 auto;
+    padding: -90px;
+}
+
+.teacher h2 {
+    position: relative;
+    left: -25px;
+    text-align: center;
+    color: rgb(14, 245, 14);
+}
+
+.docentes {
+    margin-bottom: 50px;
+}
+
+.docente {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin: 10px;
+}
+
+.docente img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.docente a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #333;
+
+}
+.docente a:hover {
+    text-decoration:underline ;
+}
+
+.contacto {
+    position: relative;
+    top: -60%;
+    left: 0%;
+    text-align: center;
+    margin-top: -3%;
+}
+
+.contacto a { 
+    color: blue;
+    text-decoration: none;
+}
+
+.contacto a:hover { 
+    text-decoration: underline;
+}
